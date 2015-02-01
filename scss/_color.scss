@@ -1,0 +1,15 @@
+/* 
+ *  Color
+ */
+
+.reversed, %reversed{
+  color: $white;
+  background-color: $black;
+}
+
+.backgrounded{
+  @extend %reversed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
