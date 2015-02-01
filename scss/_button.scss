@@ -6,10 +6,13 @@ button, .Button{
   @include ktype(0,0,0);
   font-family: $sans;
   text-transform: uppercase;
-  display: block;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   padding: kunit(1);
   border: 0;
   outline: none;
+  color: $white;
   background: $highlight;
   &:hover, &:focus{
     background: lighten($highlight, 10%);
