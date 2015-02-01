@@ -1,0 +1,17 @@
+/* 
+ *  Buttons
+ */
+
+button, .button{
+  @include ktype(0,0,0);
+  font-family: $sans;
+  text-transform: uppercase;
+  display: block;
+  padding: kunit(1);
+  border: 0;
+  outline: none;
+  background: $highlight;
+  &:hover, &:focus{
+    background: lighten($highlight, 10%);
+  }
+}
