@@ -2,31 +2,35 @@
  *  Typography
  */
 
-html{ @include khtml(); }
+html{ 
+  @include khtml(); 
+}
 body{ 
   @include kbody();
-  font-family: $serif;
+  font-family: $sans;
 }
 
 %headings{
-  font-family: $sans;
+  font-weight: 400;
 }
 
 h1{
   @extend %headings;
-  @include ktype(6,1,1);
+  @include ktype(6,0,1);
+  font-family: 'Oswald', $sans;
+  text-transform: uppercase;
 }
 h2{
   @extend %headings;
-  @include ktype(5,1,1);
+  @include ktype(4,1,1);
 }
 h3{
   @extend %headings;
-  @include ktype(4,1,1);
+  @include ktype(3,1,1);
 }
 h4{
   @extend %headings;
-  @include ktype(3,1,1);
+  @include ktype(2,1,1);
 }
 h5{
   @extend %headings;
@@ -38,7 +42,7 @@ h6{
 }
 
 p, ol, ul, li{
-  @include ktype(1,1,1);
+  @include ktype(1,1,0);
 }
 ol, ul{
   padding-left: kunit(1);
@@ -48,4 +52,14 @@ ol, ul{
 }
 li{
   @include ktype(1,0,0);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+// Utilities
+.center{
+  text-align: center;
 }

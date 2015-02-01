@@ -1,0 +1,20 @@
+/* 
+ *  Buttons
+ */
+
+button, .Button{
+  @include ktype(0,0,0);
+  font-family: $sans;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: kunit(1);
+  border: 0;
+  outline: none;
+  color: $black;
+  background: $highlight;
+  &:hover, &:focus{
+    background: lighten($highlight, 10%);
+  }
+}
