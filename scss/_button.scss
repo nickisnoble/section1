@@ -12,7 +12,7 @@ button, .Button{
   padding: kunit(1);
   border: 0;
   outline: none;
-  color: $white;
+  color: $black;
   background: $highlight;
   &:hover, &:focus{
     background: lighten($highlight, 10%);
