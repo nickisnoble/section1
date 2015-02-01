@@ -8,9 +8,6 @@
   &:after{
     box-sizing: border-box;
   }
-  & + &{
-    margin-top: kunit(1);
-  }
 }
 
 @mixin cf{
@@ -19,4 +16,8 @@
       display:table;
       clear:both;
   }
+}
+
+html, body{
+  height: 100%;
 }

@@ -1,0 +1,31 @@
+.Panel{
+  min-height: 100%;
+  position: relative;
+  padding: kunit(2);
+  background-attachment: fixed;
+  z-index: 0;
+  & + &{
+    border-top: kunit(1) solid $black;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.Panel-alternate{
+  .container{
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
