@@ -1,3 +1,36 @@
 /* 
  *  Specifics
  */
+
+#landing{
+  min-height: 70vh;
+  width: 100%;
+  position: relative;
+  display: table;
+  svg{
+    max-width: 33.3%;
+    margin: 0 auto;
+  }
+  &:after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: kunit(5) 50vw 0 50vw;
+    border-color: $black transparent transparent transparent;
+    z-index: 3;
+    margin-top: kunit(1)*-1;
+  }
+  & + .Panel{
+    padding-top: 30vh;
+  }
+}
+
+#intro{ background-image: url('../img/graffiti3.jpg'); }
+#plan{  background-image: url('../img/graffiti2.jpg'); }
+#cta{   background-image: url('../img/graffiti1.jpg'); }
